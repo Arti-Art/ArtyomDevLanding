@@ -1,7 +1,9 @@
 # ArtyomDevLanding
 yarn add --dev @nuxt/image
 
-yarn add -D sass sass-loader@10 fibers
+yarn add -D sass sass-loader@10
+
+!! do not ADD FIBERS!!!
 
 deleted nuxt transition in TheSidenav.vue
 
