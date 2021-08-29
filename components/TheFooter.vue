@@ -5,7 +5,7 @@
       <h2 class="footer-title"><slot /></h2>
 
       <div class="footer-line">
-        <a :href="myEmail"
+        <a :href=" 'mailto:' + myEmail"
           ><i class="fas fa-envelope"></i> {{ myEmail }}
           <i class="fas fa-envelope"></i
         ></a>

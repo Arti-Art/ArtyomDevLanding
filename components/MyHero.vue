@@ -9,6 +9,7 @@
       </h1>
     </div>
     <div class="hero-bg-overlay"></div>
+    <!-- <div class="scroll-down"><a href="#sec-about"><p>Scroll Down</p></a></div> -->
   </div>
 </template>
 
@@ -24,13 +25,13 @@ export default {
       'Happy to meet you !',
     ]
 
-    let cursor = gsap.to('.cursor', {
+    gsap.to('.cursor', {
       opacity: 0,
       ease: 'power2.inOut',
       repeat: -1,
     })
 
-    let boxTl = gsap.timeline()
+    const boxTl = gsap.timeline()
     boxTl
       .to('.box', {
         duration: 1,
@@ -50,12 +51,12 @@ export default {
         ease: 'elastic.out',
       })
 
-    let masterTl = gsap.timeline({
+    const masterTl = gsap.timeline({
       repeat: -1,
     }).pause()
 
     words.forEach((word) => {
-      let tlWord = gsap.timeline({
+      const tlWord = gsap.timeline({
         repeat: 1,
         yoyo: true,
         repeatDelay: 1
@@ -121,4 +122,32 @@ export default {
   width: 100%;
   height: 100%;
 }
+
+// .scroll-down {
+//   position: fixed;
+//   bottom: 120px;
+//   width: 100%;
+//   a {
+//     cursor: pointer;
+//   }
+//   p {
+//     font-family: 'Nunito';
+//     text-align: center;
+//     color: white;
+//     font-size: 22px;
+//     text-transform: uppercase;
+//     animation: scrolldown 2s infinite alternate;
+//   }
+// }
+
+// @keyframes scrolldown {
+//   0% {
+//     opacity: 0.9;
+//     transform: translateY(0px);
+//   }
+//   100% {
+//     opacity: 0.2;
+//     transform: translateY(-20px);
+//   }
+// }
 </style>
