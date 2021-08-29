@@ -1,7 +1,32 @@
 <template>
-  <h1>This is Arti's page 3</h1>
+  <div class="container">
+    <main>
+      <SectionAbout />
+      <BlackBar />
+      <SectionSkills />
+      <SectionPortfolio />
+    </main>
+  </div>
 </template>
 
 <script>
-export default {}
+import SectionAbout from '~/components/SectionAbout.vue'
+import BlackBar from '~/components/BlackBar.vue'
+
+export default {
+  components: {
+    SectionAbout,
+    BlackBar
+  },
+}
 </script>
+
+<style scoped lang="scss">
+
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+}
+
+</style>
