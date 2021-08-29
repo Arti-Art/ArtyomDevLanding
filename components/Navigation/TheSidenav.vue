@@ -4,7 +4,7 @@
     v-if="show"
     class="sidenav-backdrop"
     @click="$emit('close')"></div>
-  <transition name="slide-side">
+  <div name="old-nuxt-transition slide-side">
     <div
       v-if="show"
       class="sidenav">
@@ -17,7 +17,7 @@
         <li class="nav-item"><a href="#sec-contact">Contact</a></li>
       </ul>
     </div>
-  </transition>
+  </div>
 </div>
 </template>
 

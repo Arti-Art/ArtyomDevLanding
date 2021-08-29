@@ -60,8 +60,8 @@ export default {
   },
 
   transition: {
-    name: 'fade',
+    // name: 'fade',
     // <<< fade is the first part of the class we use in our animation.css file
-    mode: 'out-in'
+    // mode: 'out-in'
   }
 }
