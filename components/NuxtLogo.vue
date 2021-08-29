@@ -4,7 +4,7 @@
   </svg>
 </template>
 
-<style scoped>
+<style lang='scss' scoped>
 .nuxt-logo {
   height: 180px;
 }
