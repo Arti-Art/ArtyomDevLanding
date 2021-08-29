@@ -2,6 +2,7 @@
   "name": "artyom-dev-landing",
   "version": "1.0.0",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

@@ -3,6 +3,8 @@ yarn add --dev @nuxt/image
 
 yarn add -D sass sass-loader@10 fibers
 
+deleted nuxt transition in TheSidenav.vue
+
 ## Build Setup
 
 ```bash

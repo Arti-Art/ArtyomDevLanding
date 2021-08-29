@@ -59,9 +59,9 @@ export default {
   build: {
   },
 
-  transition: {
+  // transition: {
     // name: 'fade',
     // <<< fade is the first part of the class we use in our animation.css file
     // mode: 'out-in'
-  }
+  // }
 }
