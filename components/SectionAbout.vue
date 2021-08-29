@@ -23,7 +23,7 @@
 <script>
 export default {
   mounted() {
-    let tlAbout = gsap.timeline({
+    const tlAbout = gsap.timeline({
       scrollTrigger: {
         trigger: '.sec-about',
         start: 'top 90%',
@@ -40,7 +40,7 @@ export default {
         duration: 1,
       })
 
-      let tlAboutText = gsap.timeline({
+      const tlAboutText = gsap.timeline({
         scrollTrigger: {
           trigger: '.sec-about',
           start: 'top 50%',

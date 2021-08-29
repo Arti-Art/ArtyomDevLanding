@@ -31,8 +31,8 @@ export default {
     TheSideNavToggle,
   },
   mounted() {
-    let theNavbar = document.querySelector('.the-navbar');
-    let testGsap = gsap.timeline({
+    const theNavbar = document.querySelector('.the-navbar');
+    gsap.timeline({
       scrollTrigger: {
         trigger: '.navbar-container',
         start: 'top 0%',

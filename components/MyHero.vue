@@ -24,13 +24,13 @@ export default {
       'Happy to meet you !',
     ]
 
-    let cursor = gsap.to('.cursor', {
+    gsap.to('.cursor', {
       opacity: 0,
       ease: 'power2.inOut',
       repeat: -1,
     })
 
-    let boxTl = gsap.timeline()
+    const boxTl = gsap.timeline()
     boxTl
       .to('.box', {
         duration: 1,
@@ -50,12 +50,12 @@ export default {
         ease: 'elastic.out',
       })
 
-    let masterTl = gsap.timeline({
+    const masterTl = gsap.timeline({
       repeat: -1,
     }).pause()
 
     words.forEach((word) => {
-      let tlWord = gsap.timeline({
+      const tlWord = gsap.timeline({
         repeat: 1,
         yoyo: true,
         repeatDelay: 1

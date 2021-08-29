@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer-content" id="sec-contact">
+    <div id="sec-contact" class="footer-content">
 
       <h2 class="footer-title"><slot /></h2>
 

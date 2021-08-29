@@ -4,9 +4,9 @@
     class="sec-portfolio"
   >
     <div v-if="modalIsOpen" class="img-modal">
-      <div @click="prevImg" class="left-arrow">&#5176;</div>
-      <div @click="nextImg" class="right-arrow">&#5171;</div>
-      <div @click="closeModal" class="img-modal-container">
+      <div class="left-arrow" @click="prevImg">&#5176;</div>
+      <div class="right-arrow" @click="nextImg">&#5171;</div>
+      <div class="img-modal-container" @click="closeModal">
         <img :src="imagePath" alt="Gallery image">
       </div>
     </div>
@@ -16,7 +16,7 @@
 
     <div class="sec-portfolio-gallery">
       <template v-for="num in 7">
-        <div @click="openModal(num)" :class="`gallery-img img${num}`" :key="num">
+        <div :key="num" :class="`gallery-img img${num}`" @click="openModal(num)">
           <div><p>View Fullscreen</p></div>
         </div>
       </template>
@@ -46,22 +46,19 @@ export default {
       this.modalIsOpen = false
     },
     prevImg() {
-      if (this.currentImgIndex == 1) {
+      if (this.currentImgIndex === 1) {
         this.currentImgIndex = 15
       } else {
         this.currentImgIndex--
       }
     },
     nextImg() {
-      if (this.currentImgIndex == 15) {
+      if (this.currentImgIndex === 15) {
         this.currentImgIndex = 1
       } else {
         this.currentImgIndex++
       }
     },
-  },
-  mounted() {
-    console.log('Component Mounted')
   },
 }
 </script>
