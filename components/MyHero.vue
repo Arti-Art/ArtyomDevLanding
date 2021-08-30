@@ -118,7 +118,10 @@ export default {
 }
 
 .hero-bg-overlay {
-  background-color: rgba(0, 34, 104, 0.65);
+  // background-color: rgba(0, 34, 104, 0.65);
+  background: url('/BlackFade.png');
+  background-position: center bottom;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }

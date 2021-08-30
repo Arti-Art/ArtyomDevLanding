@@ -43,7 +43,7 @@ export default {
 .sidenav-backdrop {
   width: 100%;
   height: 100%;
-  background-color: var(--nav-sidenav-backdrop-color);
+  background-color: var(--sidenav-backdrop-clr);
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -53,7 +53,7 @@ export default {
 .sidenav {
   height: 100%;
   width: 300px;
-  background-color: var(--nav-sidenav-color);
+  background-color: var(--sidenav-bg-clr);
   z-index: 10000;
   position: fixed;
   top: 0;

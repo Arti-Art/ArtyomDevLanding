@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="footer-content" id="sec-contact">
+    <div id="sec-contact" class="footer-content">
 
       <h2 class="footer-title"><slot /></h2>
 
@@ -66,7 +66,7 @@ export default {
   flex-direction: column;
   align-items: center;
   background: var(--footer-bg-color);
-  color: white;
+  color: var(--footer-text-color);
   padding: 45px 10px 15px;
   letter-spacing: 1px;
 }
@@ -76,7 +76,8 @@ export default {
   margin-bottom: 30px;
   letter-spacing: 4px;
   padding: 0px 10px;
-  background-color: var(--footer-highlight-color);
+  color: var(--footer-title-color);
+  background-color: var(--footer-title-highlight-color);
 }
 
 .footer-line {
@@ -87,12 +88,12 @@ export default {
   }
   &:hover {
     font-size: large;
-    color: var(--footer-highlight-color2);
+    color: var(--footer-text-hover-color);
   }
 }
 
 .copyrights {
-  color: rgb(176, 193, 224);
+  color: var(--footer-copyrights-color);
   text-align: center;
   margin-top: 20px;
   font-size: 11px;

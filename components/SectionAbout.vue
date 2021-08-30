@@ -1,5 +1,5 @@
 <template>
-  <section class="sec-about" id="sec-about">
+  <section id="sec-about" class="sec-about">
     <div class="sec-about-cont">
       <h2 class="sec-about-cont-title">Hi ! I'm Arti</h2>
       <p class="sec-about-cont-text">
@@ -8,25 +8,23 @@
         If you would like to know more about me, <a href="#sec-contact">get in touch !</a>
       </p>
     </div>
-    <!-- <img src="~/assets/images/main-page-background.jpg" alt="">
-    <img src="/images/photographer01.jpg" alt=""> -->
     <nuxt-img
       src="/images/artisquare.jpg"
       alt=""
       sizes="xl:2000px lg:1000px md:600px sm:400px xs:300px"
       class="sec-about-img"
     />
-    <div class="about-overlay"></div>
+    <!-- <div class="about-overlay"></div> -->
   </section>
 </template>
 
 <script>
 export default {
   mounted() {
-    let tlAbout = gsap.timeline({
+    const tlAbout = gsap.timeline({
       scrollTrigger: {
         trigger: '.sec-about',
-        start: 'top 90%',
+        start: 'top 85%',
         end: 'bottom bottom',
         scrub: 1,
       },
@@ -34,13 +32,13 @@ export default {
 
     tlAbout
       .from('.sec-about-img', {
-        yPercent: -20,
-        scale: 1.3,
+        yPercent: 15,
+        scale: 1.25,
         opacity: 0,
         duration: 1,
       })
 
-      let tlAboutText = gsap.timeline({
+      const tlAboutText = gsap.timeline({
         scrollTrigger: {
           trigger: '.sec-about',
           start: 'top 50%',
@@ -81,7 +79,7 @@ export default {
   bottom: 50px;
 
   .sec-about-cont-title, .sec-about-cont-text {
-    background: var(--clr-dark-purple-tr);
+    background: var(--about-text-bg);
     border-radius: 5px;
   }
 
@@ -100,7 +98,7 @@ export default {
     max-width: 600px;
 
     a {
-      color: var(--clr-pinkred);
+      color: var(--about-text-accent);
     }
   }
 }
@@ -110,17 +108,16 @@ export default {
   height: 100vh;
   position: absolute;
   object-fit: cover;
-  // right: 0;
   top: 0;
 }
 
-.about-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  // background-color: rgba(0, 0, 0, 0.102);
-  background: linear-gradient(0deg, rgba(0,1,74,1) 1%, rgba(255,255,255,0) 50%);
-}
+// .about-overlay {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   background: var(--about-bg-grad);
+// }
+
 </style>

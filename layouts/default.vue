@@ -43,7 +43,7 @@ export default {
   // --ff-title: 'Poppins';
   --ff-body: 'Open Sans';
 
-  // COLORS
+  // COLORS - DELETE
   --clr-dark-purple: #00014a;
   --clr-dark-purple-tr: hsla(239, 100%, 15%, 0.8);
   --clr-dark-blue: #011129;
@@ -51,27 +51,46 @@ export default {
   --clr-orange: #f59300;
   --clr-pinkred: #ff2f5f;
 
-  // ELEMENTS COLORS
-  --navbar-bg-color: var(--clr-dark-purple);
-  --nav-logo-color-1: white;
+  // COLORS V2
+  --smoky-black: #12130fff;
+  --smoky-black-alpha: rgba(18, 19, 15, 0.9);
+  --cultured: #eff1edff;
+  --cultured-alpha: rgba(239, 241, 237, 0.97);
+  --green-cyan: #2d936cff;
+  --dark-spring-green: #297045ff;
+  --rose-madder: #e71d36ff;
+  --sizzling-red: #ff5a5fff;
+  --copper-rose: #986c6aff;
+  --cornflower-blue: #7796cbff;
+
+  // NAVBAR
+  --navbar-bg-color: var(--cultured-alpha);
+  --nav-logo-color-1: var(--smoky-black);
   --nav-logo-color-2: var(--clr-pinkred);
-  --nav-logo-color-3: var(--clr-light-orange);
-  // --nav-logo-color: var(--clr-light-orange);
-  --nav-hamburger-color: white;
-  --nav-link-color: white;
-  --nav-link-hover-color: var(--clr-light-orange);
-  --nav-link-topline-hover-color: var(--clr-light-orange);
-  --nav-link-bottomline-hover-color: var(--clr-light-orange);
+  --nav-logo-color-3: var(--sizzling-red);
+  --nav-hamburger-color: var(--smoky-black);
+  --nav-link-color: var(--smoky-black);
+  --nav-link-hover-color: var(--sizzling-red);
+  --nav-link-topline-hover-color: var(--sizzling-red);
+  --nav-link-bottomline-hover-color: var(--sizzling-red);
   // SIDENAV
-  --nav-sidenav-color: var(--clr-dark-blue);
-  --nav-sidenav-backdrop-color: #00030ce6;
-  --nav-sidenav-border-color: var(--clr-pinkred);
+  --sidenav-bg-clr: var(--cultured);
+  --sidenav-link-color: var(--smoky-black);
+  --sidenav-backdrop-clr: var(--smoky-black-alpha);
+  --nav-sidenav-border-color: var(--sizzling-red);
   // HERO
   --hero-iam-color: var(--clr-pinkred);
+  // ABOUT
+  --about-text-bg: var(--smoky-black);
+  --about-text-accent: var(--sizzling-red);
+  --about-bg-grad: linear-gradient(0deg, rgb(0, 0, 0) 1%, rgba(255,255,255,0) 50%);
   // FOOTER
-  --footer-bg-color: var(--clr-dark-purple);
-  --footer-highlight-color: var(--clr-orange);
-  --footer-highlight-color2: var(--clr-light-orange);
+  --footer-bg-color: var(--cultured);
+  --footer-title-color: var(--cultured);
+  --footer-title-highlight-color: var(--smoky-black);
+  --footer-text-color: var(--smoky-black);
+  --footer-text-hover-color: var(--sizzling-red);
+  --footer-copyrights-color: var(--copper-rose);
 }
 
 html {
