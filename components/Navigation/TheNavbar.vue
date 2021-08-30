@@ -30,29 +30,21 @@ export default {
   components: {
     TheSideNavToggle,
   },
-  mounted() {
-    let theNavbar = document.querySelector('.the-navbar');
-    let testGsap = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.navbar-container',
-        start: 'top 0%',
-        // markers: true,
-        onEnter: () => {
-          // console.log("onEnter triggered");
-          theNavbar.classList.add('navbar-fixed');
-        },
-        onLeaveBack: () => {
-          // console.log("onEnter triggered");
-          theNavbar.classList.remove('navbar-fixed');
-        },
-        // onEnterBack: () => {
-        //   console.log("onEnterBack triggered");
-        //   theNavbar.classList.remove('navbar-fixed');
-        // },
-      }
-    });
-    // testGsap.from('.navbar-container', { xPercent: 30 });
-  }
+  // mounted() {
+  //   const theNavbar = document.querySelector('.the-navbar');
+  //   gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: '.navbar-container',
+  //       start: 'top 0%',
+  //       onEnter: () => {
+  //         theNavbar.classList.add('navbar-fixed');
+  //       },
+  //       onLeaveBack: () => {
+  //         theNavbar.classList.remove('navbar-fixed');
+  //       },
+  //     }
+  //   });
+  // }
 }
 </script>
 
@@ -61,16 +53,21 @@ export default {
 
 .navbar-container {
   height: 60px;
-  position: relative;
+  // position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 950;
   // overflow-x:hidden; // removes horizontal scrolling created by ScrollTrigger :)
 }
 
-.navbar-fixed {
-  position:fixed;
-  top: 0;
-  left: 0;
-  z-index: 200;
-}
+// .navbar-fixed {
+//   position:fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 200;
+// }
 
 .the-navbar {
   width: 100%;

@@ -1,8 +1,8 @@
 <template>
   <div class="default-layout">
-    <MyHero />
-    <TheNavbar @sidenavToggle="displaySidenav = !displaySidenav" />
     <TheSidenav :show="displaySidenav" @close="displaySidenav = false" />
+    <TheNavbar @sidenavToggle="displaySidenav = !displaySidenav" />
+    <MyHero />
     <Nuxt />
     <TheFooter
       my-email="art.kouznetsov@gmail.com"
