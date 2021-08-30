@@ -66,8 +66,7 @@ export default {
   height: 100vh;
   min-height: 640px;
   text-align: left;
-  background: rgb(0, 0, 0);
-  color: white;
+  background-color: black;
   position: relative;
   overflow: hidden;
 }
@@ -77,6 +76,7 @@ export default {
   z-index: 1;
   position: absolute;
   bottom: 50px;
+  color: var(--about-text-clr);
 
   .sec-about-cont-title, .sec-about-cont-text {
     background: var(--about-text-bg);

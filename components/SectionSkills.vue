@@ -31,7 +31,6 @@
   padding: 7em 0;
   font-family: 'Poppins';
   background: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
   background: url('/images/whitewallsmall.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,17 +44,18 @@
 
   h2 {
     display: inline-block;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--skils-title-bg-clr);
     padding: 0px 8px;
     margin-bottom: 15px;
     border-radius: 2px;
-    color: white;
+    color: var(--skils-title-clr);
     font-size: 1.7rem;
     text-transform: uppercase;
   }
 
   p {
     font-size: 1.3rem;
+    color: var(--skils-text-clr);
     background: hsla(0, 0%, 100%, 0.5);
     display: inline-block;
     padding: 0px 8px;

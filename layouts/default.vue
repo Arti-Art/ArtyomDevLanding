@@ -81,9 +81,20 @@ export default {
   // HERO
   --hero-iam-color: var(--clr-pinkred);
   // ABOUT
+  --about-bg-col: var(--cultured);
+  --about-text-clr: var(--cultured);
   --about-text-bg: var(--smoky-black);
   --about-text-accent: var(--sizzling-red);
   --about-bg-grad: linear-gradient(0deg, rgb(0, 0, 0) 1%, rgba(255,255,255,0) 50%);
+  // SKILLS
+  --skils-title-bg-clr: var(--smoky-black);
+  --skils-title-clr: var(--cultured);
+  --skils-text-clr: var(--smoky-black);
+  // PORTFOLIO
+  --portfo-bg-clr: var(--smoky-black);
+  --portfo-title-bg-clr: var(--cultured);
+  --portfo-title-clr: var(--smoky-black);
+  --portfo-text-clr: var(--cultured);
   // FOOTER
   --footer-bg-color: var(--cultured);
   --footer-title-color: var(--cultured);
