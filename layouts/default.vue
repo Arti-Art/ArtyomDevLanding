@@ -83,7 +83,7 @@ export default {
   // ABOUT
   --about-bg-col: var(--cultured);
   --about-text-clr: var(--cultured);
-  --about-text-bg: var(--smoky-black);
+  --about-text-bg: #28628deb;
   --about-text-accent: var(--sizzling-red);
   --about-bg-grad: linear-gradient(0deg, rgb(0, 0, 0) 1%, rgba(255,255,255,0) 50%);
   // SKILLS

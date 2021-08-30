@@ -85,6 +85,7 @@ export default {
 
   .sec-about-cont-title {
     font-size: clamp(38px, 6vw, 70px);
+    font-family: 'Caveat', sans-serif;
     display: inline-block;
     padding: 0px 20px;
     margin-bottom: 20px;
@@ -92,6 +93,7 @@ export default {
 
   .sec-about-cont-text {
     font-family: 'Poppins', sans-serif;
+    // font-family: 'Caveat', sans-serif;
     font-size: clamp(18px, 3vw, 24px);
     letter-spacing: .5px;
     padding: 10px 20px;

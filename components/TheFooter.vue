@@ -12,7 +12,7 @@
       </div>
 
       <div class="footer-line">
-        <a :href=" 'https://www.instagram.com/' + instagram + '/' "
+        <a :href=" 'https://www.instagram.com/' + instagram + '/' " rel=”noreferrer”
           ><i class="fab fa-instagram"></i> Instagram: @{{ instagram }} <i class="fab fa-instagram"></i></a>
       </div>
 
@@ -21,7 +21,7 @@
       </div>
 
       <div class="footer-line">
-        <a :href="github"
+        <a :href="github" rel=”noreferrer”
           ><i class="fab fa-github"></i> My GitHub <i class="fab fa-github"></i></a>
       </div>
 
