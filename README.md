@@ -1,9 +1,14 @@
-# ArtyomDevLanding
+# ArtyomDev Landing Page
+
+Hi, I'm Arti. Here's the [link for my Landing Page](https://artyomdev.netlify.app/)
+
+## Notes
+
 yarn add --dev @nuxt/image
 
 yarn add -D sass sass-loader@10
 
-!! do not ADD FIBERS!!!
+!! DO NOT ADD FIBERS!!!
 
 deleted nuxt transition in TheSidenav.vue
 
@@ -23,5 +28,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-## Special Directories
