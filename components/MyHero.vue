@@ -59,10 +59,10 @@ export default {
       const tlWord = gsap.timeline({
         repeat: 1,
         yoyo: true,
-        repeatDelay: 1
+        repeatDelay: .6 // wait before displayng the next word
       })
       tlWord.to('.text', {
-        duration: 1,
+        duration: 1, // how fast it gets typed
         text: word,
       })
       masterTl.add(tlWord)
