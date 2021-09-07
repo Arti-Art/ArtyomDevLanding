@@ -13,6 +13,7 @@
 
     <div class="sec-portfolio-title-box"><h2 class="sec-portfolio-title">Portfolio</h2></div>
     <p class="sec-portfolio-description">Work in progress - at the moment, only featuring some of my photographic works.</p>
+    <p class="sec-portfolio-description">Since this website being is hosted for free with GitHub/Netlify, you might experience slow loading times for fullscreen images.</p>
 
     <div class="sec-portfolio-gallery">
       <template v-for="num in 7">
